@@ -9,6 +9,20 @@ This project is a collection of websites, dockerfiles and kubernetes deployment 
 
 Add badges from somewhere like: [shields.io](https://shields.io/)
 
+[![Draft Minor Release on Push/Merge into main](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/main-release.yml/badge.svg?branch=main)](https://github.com/jpconstantineau/jpcontantineau-web/actions/workflows/main-release.yml)
+
+[![Draft Patch Release on Push/Merge into stage](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/stage-release.yml/badge.svg?branch=stage)](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/stage-release.yml)
+
+![GitHub manifest version](https://img.shields.io/github/manifest-json/v/jpconstantineau/jpconstantineau-web/main)
+
+![GitHub manifest version](https://img.shields.io/github/manifest-json/v/jpconstantineau/jpconstantineau-web/stage)
+
+![GitHub manifest version](https://img.shields.io/github/manifest-json/v/jpconstantineau/jpconstantineau-web/develop)
+
+
+
+
+
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 ### Uses Semantic Versioning
