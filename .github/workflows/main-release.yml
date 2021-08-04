@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-name: Draft Minor Release on Push/Merge into main
+name: Major Release on Push/Merge into main
 
 jobs:
   build:
@@ -39,4 +39,4 @@ jobs:
           tag_name: ${{ steps.bump_version.outputs.next-version }}
           release_name: ${{ steps.bump_version.outputs.next-version }}
           draft: false
-          prerelease: true
+          prerelease: false

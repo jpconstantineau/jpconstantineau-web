@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - stage
-name: Draft Patch Release on Push/Merge into stage
+name: Feature Release on Push/Merge into stage
 
 jobs:
   build:
@@ -38,6 +38,6 @@ jobs:
         with:
           tag_name: ${{ steps.bump_version.outputs.next-version }}
           release_name: ${{ steps.bump_version.outputs.next-version }}
-          draft: true
+          draft: false
           prerelease: true
 
