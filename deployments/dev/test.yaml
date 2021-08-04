@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: web-test-dev
-        image: ghcr.io/jpconstantineau/jpconstantineau-web-test:dev
+        image: ghcr.io/jpconstantineau/jpconstantineau-web-test:develop
         ports:
         - containerPort: 80
 ---
