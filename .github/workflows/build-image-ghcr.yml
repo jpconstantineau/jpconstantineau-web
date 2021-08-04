@@ -8,7 +8,11 @@ on:
       - completed
 
 jobs:
-
+  test:
+    name: check which ref we have
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo ${{github.ref}}
   build:
     runs-on: ubuntu-latest
 

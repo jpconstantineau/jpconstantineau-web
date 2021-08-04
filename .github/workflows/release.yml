@@ -7,6 +7,11 @@ on:
       - main
 
 jobs:
+  test:
+    name: check which ref we have
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo ${{github.ref}}
   release-develop:
     name: Create Patch Release
     runs-on: ubuntu-latest
