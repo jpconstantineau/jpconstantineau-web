@@ -7,6 +7,9 @@ on:
       - main
 
 jobs:
+  test:
+    steps:
+    - run: echo ${{github.ref}}
   release-develop:
     name: Create Patch Release
     runs-on: ubuntu-latest
