@@ -7,15 +7,10 @@ on:
       - main
 
 jobs:
-  test:
-    name: check which ref we have
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo ${{github.ref}}
   release-develop:
     name: Create Patch Release
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'develop' }}
+    if: ${{ github.ref == 'ref/heads/develop' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -52,7 +47,7 @@ jobs:
   release-stage:
     name: Create Minor Release
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'stage' }}
+    if: ${{ github.ref == 'ref/heads/stage' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -89,7 +84,7 @@ jobs:
   release-main:
     name: Create Major Release
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'main' }}
+    if: ${{ github.ref == 'ref/heads/main' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
