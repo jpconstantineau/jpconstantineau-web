@@ -5,7 +5,7 @@ on:
       - develop
       - stage
       - main
-      
+
 jobs:
   release-develop:
     name: Create Patch Release
@@ -84,6 +84,7 @@ jobs:
   release-main:
     name: Create Major Release
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'main' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
