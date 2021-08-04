@@ -41,7 +41,7 @@ jobs:
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }}-${{ matrix.folder }} | tr '[A-Z]' '[a-z]')
           # Strip git ref prefix from version
           VERSION=$(echo "${{ github.event.workflow_run.head_branch }}" | sed -e 's,.*/\(.*\),\1,')
-          SHA=$(echo "${{ github.event.workflow_run.head_sha }}"
+          SHA=$(echo "${{ github.event.workflow_run.head_sha }}")
           # Strip "v" prefix from tag name
           [[ "${{ github.event.workflow_run.head_branch}}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
           # when the branch is main, replace master with latest
