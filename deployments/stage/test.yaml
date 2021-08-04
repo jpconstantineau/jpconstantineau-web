@@ -1,0 +1,60 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-test-stage
+  namespace: stage-jpto-dev
+  labels:
+    app: web-test-stage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-test-stage
+  template:
+    metadata:
+      labels:
+        app: web-test-stage
+    spec:
+      containers:
+      - name: web-test-stage
+        image: ghcr.io/jpconstantineau/jpconstantineau-web-test:stage
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-test-stahe-service
+  namespace: stage-jpto-dev
+spec:
+  selector:
+    app: web-test-stage
+  ports:
+    - protocol: TCP
+      port: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: web-test-stage-ingress
+  namespace: stage-jpto-dev
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+    cert-manager.io/cluster-issuer: letsencrypt-production
+spec:
+  rules:
+  - host: test.stage.jpto.dev
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: web-test-stage-service
+            port: 
+              number: 80
+  tls:
+  - hosts: 
+    - test.stage.jpto.dev
+    secretName: test.stage.jpto.dev-tls-production

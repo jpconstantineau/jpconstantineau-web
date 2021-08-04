@@ -1,0 +1,60 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-test-prod
+  namespace: prod-jpto-dev
+  labels:
+    app: web-test-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-test-prod
+  template:
+    metadata:
+      labels:
+        app: web-test-prod
+    spec:
+      containers:
+      - name: web-test-prod
+        image: ghcr.io/jpconstantineau/jpconstantineau-web-test:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-test-prod-service
+  namespace: prod-jpto-dev
+spec:
+  selector:
+    app: web-test-prod
+  ports:
+    - protocol: TCP
+      port: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: web-test-prod-ingress
+  namespace: prod-jpto-dev
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+    cert-manager.io/cluster-issuer: letsencrypt-production
+spec:
+  rules:
+  - host: test.jpto.dev
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: web-test-prod-service
+            port: 
+              number: 80
+  tls:
+  - hosts: 
+    - test.jpto.dev
+    secretName: test.prod.jpto.dev-tls-production

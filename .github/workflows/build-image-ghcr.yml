@@ -14,6 +14,10 @@ jobs:
     steps:
     - run: echo ${{github.event.workflow_run.head_branch}}
   build:
+    strategy:
+      fail-fast: false
+      matrix:
+        folder: ['test']
     runs-on: ubuntu-latest
 
     steps:
@@ -34,16 +38,21 @@ jobs:
 
     - name: Build and push container image
       run: |
-          IMAGE_ID=$(echo ghcr.io/${{ github.repository }} | tr '[A-Z]' '[a-z]')
+          IMAGE_ID=$(echo ghcr.io/${{ github.repository }}-${{ matrix.folder }} | tr '[A-Z]' '[a-z]')
           # Strip git ref prefix from version
           VERSION=$(echo "${{ github.event.workflow_run.head_branch }}" | sed -e 's,.*/\(.*\),\1,')
+          SHA=$(echo "${{ github.event.workflow_run.head_sha }}")
           # Strip "v" prefix from tag name
           [[ "${{ github.event.workflow_run.head_branch}}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
           # when the branch is main, replace master with latest
           [ "$VERSION" == "main" ] && VERSION=latest
+          [ "$VERSION" == "stage" ] && VERSION=stage
+          [ "$VERSION" == "develop" ] && VERSION=develop
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
+          cd ${{ matrix.folder }}
           # Build and Publish container image
           docker buildx build --push \
           --tag $IMAGE_ID:$VERSION \
-          --platform linux/amd64,linux/arm/v7,linux/arm64 .
+          --tag $IMAGE_ID:$SHA \
+          --platform linux/amd64,linux/arm64 .
