@@ -9,9 +9,13 @@ This project is a collection of websites, dockerfiles and kubernetes deployment 
 
 Add badges from somewhere like: [shields.io](https://shields.io/)
 
-[![Draft Minor Release on Push/Merge into main](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/main-release.yml/badge.svg?branch=main)](https://github.com/jpconstantineau/jpcontantineau-web/actions/workflows/main-release.yml)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jpconstantineau/jpconstantineau-web)
 
-[![Draft Patch Release on Push/Merge into stage](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/stage-release.yml/badge.svg?branch=stage)](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/stage-release.yml)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/jpconstantineau/jpconstantineau-web?include_prereleases)
+
+[![Release](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/release.yml/badge.svg)](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/release.yml)
+
+[![Build and publish container to ghcr.io](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/build-image-ghcr.yml/badge.svg)](https://github.com/jpconstantineau/jpconstantineau-web/actions/workflows/build-image-ghcr.yml)
 
 ![GitHub manifest version](https://img.shields.io/github/manifest-json/v/jpconstantineau/jpconstantineau-web/main)
 
