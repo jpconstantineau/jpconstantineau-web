@@ -1,12 +1,11 @@
+name: Release
 on:
   push:
     branches:
       - develop
       - stage
       - main
-
-name: Release
-
+      
 jobs:
   release-develop:
     name: Create Patch Release
