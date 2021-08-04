@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - develop
-name: Draft Patch Release on Push/Merge into develop
+name: Patch Release on Push/Merge into develop
 
 jobs:
   build:

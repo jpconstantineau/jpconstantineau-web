@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - stage
-name: Draft Patch Release on Push/Merge into stage
+name: Feature Release on Push/Merge into stage
 
 jobs:
   build:
