@@ -1,0 +1,101 @@
+[
+    {
+        "id":1,
+        "groupid": "program",
+        "rank":30,
+        "name": "Programmers",
+        "path":"/group/program",
+        "visible": true 
+    },
+    {
+        "id":2,
+        "groupid": "bluemicro",
+        "rank":10,
+        "name": "Wireless",
+        "path":"/group/bluemicro",
+        "visible": true        
+    },
+    {
+        "id":3,
+        "groupid": "battery",
+        "rank":20,
+        "name": "Batteries",
+        "path":"/group/battery",
+        "visible": true        
+    },
+    {
+        "id":4,
+        "groupid": "keyboards",
+        "rank":50,
+        "name": "Keyboards",
+        "path":"/group/keyboards",
+        "visible": true        
+    },
+    {
+        "id":5,
+        "groupid": "wired",
+        "rank":40,
+        "name": "Wired",
+        "path":"/group/wired",
+        "visible": true        
+    },
+    {
+        "id":6,
+        "groupid": "macropads",
+        "rank":60,
+        "name": "Macropads",
+        "path":"/group/macropads",
+        "visible": true        
+    },
+    {
+        "id":7,
+        "groupid": "split_boards",
+        "rank":70,
+        "name": "Split Keyboards",
+        "path":"/group/split_boards",
+        "visible": true        
+    },
+    {
+        "id":8,
+        "groupid": "groupbuy",
+        "rank":80,
+        "name": "Group Buys",
+        "path":"/group/groupbuy",
+        "visible": true       
+    },
+    {
+        "id":9,
+        "groupid": "OUT",
+        "rank":999,
+        "name": "Out of Stock",
+        "path":"/",
+        "visible": false     
+    },
+    {
+        "id":10,
+        "groupid": "home",
+        "rank":1,
+        "name": "Home",
+        "path":"/",
+        "visible": true     
+    },    
+    {
+        "id":11,
+        "groupid": "subscribe",
+        "rank":900,
+        "name": "Subscribe",
+        "path":"/subscribe",
+        "visible": true     
+    },
+
+    {
+        "id":12,
+        "groupid": "about",
+        "rank":800,
+        "name": "About",
+        "path":"/about",
+        "visible": true     
+    }
+
+
+]

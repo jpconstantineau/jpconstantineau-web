@@ -1,0 +1,9 @@
+.site-card-border-less-wrapper {
+    padding: 30px;
+    background: #ececec;
+  }
+
+  .hidenbutton {
+    border: none;
+    background-color: transparent;
+  }
