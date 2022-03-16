@@ -1,0 +1,2 @@
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sdi1      ext4  103G  8.7G   89G   9% /

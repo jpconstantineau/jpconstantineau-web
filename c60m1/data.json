@@ -1,0 +1,320 @@
+{ name:' C60M1 ',
+cpu:{
+"Architecture": "x86_64",
+"CPU op-mode(s)": "32-bit, 64-bit",
+"Byte Order": "Little Endian",
+"CPU(s)": "2",
+"On-line CPU(s) list": "0,1",
+"Thread(s) per core": "1",
+"Core(s) per socket": "2",
+"Socket(s)": "1",
+"NUMA node(s)": "1",
+"Vendor ID": "AuthenticAMD",
+"CPU family": "20",
+"Model": "2",
+"Model name": "AMD C-60 APU with Radeon(tm) HD Graphics",
+"Stepping": "0",
+"CPU MHz": "1000.000",
+"CPU max MHz": "1000.0000",
+"CPU min MHz": "800.0000",
+"BogoMIPS": "1999.94",
+"Virtualization": "AMD-V",
+"L1d cache": "32K",
+"L1i cache": "32K",
+"L2 cache": "512K",
+"NUMA node0 CPU(s)": "0,1",
+"Flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc extd_apicid aperfmperf pni monitor ssse3 cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch ibs skinit wdt cpb hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter"
+}
+,
+ disks:[
+{
+info:{
+"Model Family": "Seagate Barracuda 7200.11",
+"Device Model": "ST31500341AS",
+"Serial Number": "9VS10E37",
+"User Capacity": "1,500,301,910,016 bytes [1.50 TB]",
+"Sector Size": "512 bytes logical/physical",
+"Rotation Rate": "7200 rpm"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "92261142",
+Spin_Up_Time: "0",
+Start_Stop_Count: "4510",
+Reallocated_Sector_Ct: "7",
+Seek_Error_Rate: "192349308",
+Power_On_Hours: "51078",
+Spin_Retry_Count: "1",
+Power_Cycle_Count: "117",
+End-to-End_Error: "0",
+Reported_Uncorrect: "0",
+Command_Timeout: "4",
+High_Fly_Writes: "178",
+Airflow_Temperature_Cel: "24",
+Temperature_Celsius: "24",
+Hardware_ECC_Recovered: "92261142",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "4",
+Head_Flying_Hours: "29770",
+Total_LBAs_Written: "1745261275",
+Total_LBAs_Read: "2028457374"
+} 
+,
+device:' sda '
+},
+{
+info:{
+"Model Family": "Western Digital Caviar Green",
+"Device Model": "WDC WD10EACS-00D6B1",
+"Serial Number": "WD-WCAU45732270",
+"User Capacity": "1,000,204,886,016 bytes [1.00 TB]",
+"Sector Size": "512 bytes logical/physical"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "0",
+Spin_Up_Time: "6833",
+Start_Stop_Count: "858",
+Reallocated_Sector_Ct: "0",
+Seek_Error_Rate: "0",
+Power_On_Hours: "33755",
+Spin_Retry_Count: "0",
+Calibration_Retry_Count: "0",
+Power_Cycle_Count: "93",
+Power-Off_Retract_Count: "18",
+Load_Cycle_Count: "858",
+Temperature_Celsius: "21",
+Reallocated_Event_Count: "0",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "0",
+Multi_Zone_Error_Rate: "0"
+} 
+,
+device:' sdb '
+},
+{
+info:{
+"Model Family": "Western Digital Caviar Green",
+"Device Model": "WDC WD10EACS-65D6B0",
+"Serial Number": "WD-WCAU41920059",
+"User Capacity": "1,000,204,886,016 bytes [1.00 TB]",
+"Sector Size": "512 bytes logical/physical"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "18",
+Spin_Up_Time: "7075",
+Start_Stop_Count: "7450",
+Reallocated_Sector_Ct: "0",
+Seek_Error_Rate: "0",
+Power_On_Hours: "56683",
+Spin_Retry_Count: "0",
+Calibration_Retry_Count: "0",
+Power_Cycle_Count: "251",
+Power-Off_Retract_Count: "23",
+Load_Cycle_Count: "7446",
+Temperature_Celsius: "21",
+Reallocated_Event_Count: "0",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "0",
+Multi_Zone_Error_Rate: "0"
+} 
+,
+device:' sdc '
+},
+{
+info:{
+"Model Family": "Western Digital Caviar Green",
+"Device Model": "WDC WD10EACS-00ZJB0",
+"Serial Number": "WD-WCASJ0377272",
+"User Capacity": "1,000,204,886,016 bytes [1.00 TB]",
+"Sector Size": "512 bytes logical/physical"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "0",
+Spin_Up_Time: "7950",
+Start_Stop_Count: "2670",
+Reallocated_Sector_Ct: "0",
+Seek_Error_Rate: "0",
+Power_On_Hours: "57306",
+Spin_Retry_Count: "0",
+Calibration_Retry_Count: "0",
+Power_Cycle_Count: "669",
+Power-Off_Retract_Count: "169",
+Load_Cycle_Count: "1288087",
+Temperature_Celsius: "21",
+Reallocated_Event_Count: "0",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "0",
+Multi_Zone_Error_Rate: "0"
+} 
+,
+device:' sdd '
+},
+{
+info:{
+"Model Family": "Western Digital Caviar Green",
+"Device Model": "WDC WD15EADS-00P8B0",
+"Serial Number": "WD-WMAVU0362497",
+"User Capacity": "1,500,301,910,016 bytes [1.50 TB]",
+"Sector Size": "512 bytes logical/physical"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "0",
+Spin_Up_Time: "5975",
+Start_Stop_Count: "5839",
+Reallocated_Sector_Ct: "0",
+Seek_Error_Rate: "0",
+Power_On_Hours: "31222",
+Spin_Retry_Count: "0",
+Calibration_Retry_Count: "0",
+Power_Cycle_Count: "126",
+Power-Off_Retract_Count: "52",
+Load_Cycle_Count: "146986",
+Temperature_Celsius: "23",
+Reallocated_Event_Count: "0",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "0",
+Multi_Zone_Error_Rate: "0"
+} 
+,
+device:' sde '
+},
+{
+info:{
+"Model Family": "Western Digital Caviar Green",
+"Device Model": "WDC WD10EACS-65D6B0",
+"Serial Number": "WD-WCAU42490148",
+"User Capacity": "1,000,204,886,016 bytes [1.00 TB]",
+"Sector Size": "512 bytes logical/physical"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "0",
+Spin_Up_Time: "6991",
+Start_Stop_Count: "7647",
+Reallocated_Sector_Ct: "0",
+Seek_Error_Rate: "0",
+Power_On_Hours: "21124",
+Spin_Retry_Count: "0",
+Calibration_Retry_Count: "0",
+Power_Cycle_Count: "92",
+Power-Off_Retract_Count: "23",
+Load_Cycle_Count: "7647",
+Temperature_Celsius: "21",
+Reallocated_Event_Count: "0",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "0",
+Multi_Zone_Error_Rate: "0"
+} 
+,
+device:' sdf '
+},
+{
+info:{
+"Model Family": "Western Digital Caviar Green",
+"Device Model": "WDC WD10EACS-00D6B1",
+"Serial Number": "WD-WCAU45562321",
+"User Capacity": "1,000,204,886,016 bytes [1.00 TB]",
+"Sector Size": "512 bytes logical/physical"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "0",
+Spin_Up_Time: "6808",
+Start_Stop_Count: "3629",
+Reallocated_Sector_Ct: "0",
+Seek_Error_Rate: "0",
+Power_On_Hours: "39526",
+Spin_Retry_Count: "0",
+Calibration_Retry_Count: "0",
+Power_Cycle_Count: "101",
+Power-Off_Retract_Count: "36",
+Load_Cycle_Count: "3629",
+Temperature_Celsius: "20",
+Reallocated_Event_Count: "0",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "0",
+Multi_Zone_Error_Rate: "0"
+} 
+,
+device:' sdg '
+},
+{
+info:{
+"Model Family": "Western Digital Caviar Green",
+"Device Model": "WDC WD10EACS-00ZJB0",
+"Serial Number": "WD-WCASJ0365213",
+"User Capacity": "1,000,204,886,016 bytes [1.00 TB]",
+"Sector Size": "512 bytes logical/physical"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "5",
+Spin_Up_Time: "8325",
+Start_Stop_Count: "1313",
+Reallocated_Sector_Ct: "0",
+Seek_Error_Rate: "0",
+Power_On_Hours: "41433",
+Spin_Retry_Count: "0",
+Calibration_Retry_Count: "0",
+Power_Cycle_Count: "119",
+Power-Off_Retract_Count: "78",
+Load_Cycle_Count: "1215046",
+Temperature_Celsius: "22",
+Reallocated_Event_Count: "0",
+Current_Pending_Sector: "0",
+Offline_Uncorrectable: "0",
+UDMA_CRC_Error_Count: "0",
+Multi_Zone_Error_Rate: "1"
+} 
+,
+device:' sdh '
+},
+{
+info:{
+"Model Family": "SandForce Driven SSDs",
+"Device Model": "OCZ-VERTEX3",
+"Serial Number": "OCZ-I1UKFT36958F19O4",
+"User Capacity": "120,034,123,776 bytes [120 GB]",
+"Sector Size": "512 bytes logical/physical",
+"Rotation Rate": "Solid State Device"
+}
+,
+smart:{
+Raw_Read_Error_Rate: "0/99625595",
+Retired_Block_Count: "0",
+Power_On_Hours_and_Msec: "31584h+20m+49.220s",
+Power_Cycle_Count: "382",
+Program_Fail_Count: "0",
+Erase_Fail_Count: "0",
+Unexpect_Power_Loss_Ct: "102",
+Wear_Range_Delta: "6",
+Program_Fail_Count: "0",
+Erase_Fail_Count: "0",
+Reported_Uncorrect: "0",
+Temperature_Celsius: "30",
+ECC_Uncorr_Error_Count: "0/99625595",
+Reallocated_Event_Count: "0",
+Unc_Soft_Read_Err_Rate: "0/99625595",
+Soft_ECC_Correct_Rate: "0/99625595",
+Life_Curve_Status: "100",
+SSD_Life_Left: "0",
+SandForce_Internal: "18515",
+SandForce_Internal: "8769",
+Lifetime_Writes_GiB: "8769",
+Lifetime_Reads_GiB: "9305"
+} 
+,
+device:' sdi '
+}
+]}

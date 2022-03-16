@@ -1,0 +1,3 @@
+Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+enp4s0     1500 0  279275419      0      0 0      12893250      0      0      0 BMRU
+lo        65536 0      3782      0      0 0          3782      0      0      0 LRU

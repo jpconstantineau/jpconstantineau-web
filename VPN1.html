@@ -35,11 +35,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Server Monitor: Overview</a>
+          <a class="navbar-brand" href="/monitor/">Server Monitor: VPN1 <span id="date"></span></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 		 <ul class="nav navbar-nav navbar-right">
-        <li></li>
+        <li><a href="#" id="uptime"></a></li>
       </ul>
  <div ></div>
         </div><!--/.navbar-collapse -->
@@ -52,26 +52,46 @@
       <div class="row">
         <div class="col-lg-8">
 
-		  <h3>FRACTAL <a href="FRACTAL.html" id="FRACTAL_uptime"></a></h3>
-		  <p id="FRACTAL_date"></p>
-                  <div id="FRACTAL_zpool"></div>
-                  <h3>FREENAS <a href="FREENAS.html" id="FREENAS_uptime"></a></h3>
-		  <p id="FREENAS_date"></p>
-		  <div id="FREENAS_zpool"></div>
-	          <h3>C60M1 <a href="C60M1.html" id="C60M1_uptime"></a></h3>
-		  <p id="C60M1_date"></p>
-		  <div id="C60M1_zpool"></div>
-		  <h3>VPN1 <a href="VPN1.html" id="VPN1_uptime"></a></h3>
-		  <p id="VPN1_date"></p>
-		  <div id="VPN1_zpool"></div>
-
+		  <h3>ZFS Pools</h3>
+           <div id="zpool"></div>
+		   <h3>ZFS Filesystems</h3>
+		    <div id="zfslist"></div>
+			<h3>Filesystems</h3>
+          <div id="df"></div>
+		  <h3>Snapshots</h3>
+          <div id="snapshots"></div>
+			<h3>zpool iostat</h3>
+           <div id="iostat"></div>
         </div>
         <div class="col-lg-4">
+          <h3>Free Memory</h3>
+           <div id="free"></div>
 		   <h3>UPS Info</h3>
            <div id="ups"></div>
+		<h3>Pool Scrub Status</h3>
+           <div id="scrubs"></div>
+
        </div>
 	   </div>
-	
+	   <div class="row">
+        <div class="col-md-6">
+
+        </div>
+		<div class="col-md-6">
+  
+
+		</div>
+
+      </div>
+<div class="row">
+		<div class="col-md-12">
+           <h3>Top 10 CPU Processes</h3>
+           <div id="ps_cpu"></div>
+           <h3>Top 10 Memory Processes</h3>
+           <div id="ps_memory"></div>
+        </div>
+
+      </div>
       <hr>
 
       <footer>
@@ -89,24 +109,19 @@
 		
 		function loadlinks(){
 				
-				$("#FRACTAL_uptime").load("fractal/uptime.txt");
-				$("#FREENAS_uptime").load("freenas/uptime.txt");
-				$("#C60M1_uptime").load("c60m1/uptime.txt");
-				$("#VPN1_uptime").load("vpn1/uptime.txt");
-
-				$("#FRACTAL_zpool").load("fractal/zpool.html");
-				$("#FREENAS_zpool").load("freenas/zpool.html");
-				$("#C60M1_zpool").load("c60m1/zpool.html");
-				$("#VPN1_zpool").load("vpn1/zpool.html");
-
-				$("#FRACTAL_date").load("fractal/date.txt");
-				$("#FREENAS_date").load("freenas/date.txt");
-				$("#C60M1_date").load("c60m1/date.txt");
-				$("#VPN1_date").load("vpn1/date.txt");
-
-
-				$("#ups").load("FRACTAL/ups.html");
-						}
+				$("#uptime").load("vpn1/uptime.txt");
+				$("#date").load("vpn1/date.txt");
+				$("#df").load("vpn1/df.html");
+				$("#free").load("vpn1/free.html");
+				$("#iostat").load("vpn1/iostat.html");
+				$("#zfslist").load("vpn1/zfslist.html");
+				$("#zpool").load("vpn1/zpool.html");
+				$("#scrubs").load("vpn1/scrubs.html");
+				$("#ps_memory").load("vpn1/ps_memory.html");
+				$("#ps_cpu").load("vpn1/ps_cpu.html");
+				$("#ups").load("vpn1/ups.html");
+				$("#snapshots").load("vpn1/snapshots.html");
+		}
 
 		loadlinks(); // This will run on page load
 			setInterval(function(){

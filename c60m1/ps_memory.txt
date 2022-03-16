@@ -1,0 +1,10 @@
+root      3689  0.0  0.3  90440 28276 ?        Ss   Jan22   1:38 /usr/bin/perl /usr/share/webmin/miniserv.pl /etc/webmin/miniserv.conf
+root      3350  0.0  0.3 157784 26336 ?        Ssl  Jan22   0:54 /usr/lib/snapd/snapd
+root      3450  0.0  0.2 337920 15836 ?        Ss   Jan22   0:02 /usr/sbin/smbd -D
+root      3685  0.0  0.1 286844  9092 ?        S    Jan22   0:02  \_ /usr/sbin/winbindd
+root      3684  0.0  0.1 286712  8436 ?        Ss   Jan22   0:10 /usr/sbin/winbindd
+root      3398  0.0  0.1 277176  8236 ?        Ssl  Jan22   0:14 /usr/lib/policykit-1/polkitd --no-debug
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+systemd+  3144  0.0  0.0 100324  2640 ?        Ssl  Jan22   0:01 /lib/systemd/systemd-timesyncd
+syslog    3284  0.0  0.0 256392  4200 ?        Ssl  Jan22   0:21 /usr/sbin/rsyslogd -n
+root       994  0.0  0.0      0     0 ?        S    Jan22   0:00  \_ [z_unmount]

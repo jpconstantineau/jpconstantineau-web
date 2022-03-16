@@ -1,0 +1,13 @@
+NAME                  USED  AVAIL  REFER  MOUNTPOINT
+Pool                 3.23T  6.98T   140K  /Pool
+Pool/Movies           348G  6.98T   348G  /Pool/Movies
+Pool/Software        49.3G  6.98T  49.2G  /Pool/Software
+Pool/Sylvie           485G  6.98T   485G  /Pool/Sylvie
+Pool/TV              2.33T  6.98T  2.33T  /Pool/TV
+Pool/VMs             39.4G  6.98T  39.4G  /Pool/VMs
+Storage               386M   230G    19K  /Storage
+Storage/ISOs          371M   230G   371M  /Storage/ISOs
+Storage/Local        14.5M   230G  14.4M  /Storage/Local
+Storage/VMs           586K   230G    19K  /Storage/VMs
+Storage/VMs/pfsense   568K   230G   568K  /Storage/VMs/pfsense
+Storage/scripts        19K   230G    19K  /Storage/scripts

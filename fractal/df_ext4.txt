@@ -1,0 +1,2 @@
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sda2      ext4   66G   16G   47G  25% /
