@@ -1,3 +1,0 @@
-NAME          SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
-MonitorPool  3.97G  11.5M  3.96G         -    20%     0%  1.00x  ONLINE  -
-Pool         4.08T  2.19T  1.89T         -    39%    53%  1.00x  ONLINE  -

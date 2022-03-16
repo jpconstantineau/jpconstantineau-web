@@ -6,28 +6,30 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Server Monitor</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link href="css/dashboard.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
 
-        <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -35,89 +37,62 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Server Monitor: Overview</a>
+          <a class="navbar-brand" href="#">JPConstantineau</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-		 <ul class="nav navbar-nav navbar-right">
-        <li></li>
-      </ul>
- <div ></div>
-        </div><!--/.navbar-collapse -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/monitor">Monitor</a></li>
+            <li><a href="/Bikes">Bikes</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          
+        </div>
       </div>
     </nav>
 
-
-    <div class="container">
-      <!-- Example row of columns -->
+    <div class="container-fluid">
+      
       <div class="row">
-        <div class="col-lg-8">
-
-		  <h3>FRACTAL <a href="FRACTAL.html" id="FRACTAL_uptime"></a></h3>
-		  <p id="FRACTAL_date"></p>
-                  <div id="FRACTAL_zpool"></div>
-                  <h3>FREENAS <a href="FREENAS.html" id="FREENAS_uptime"></a></h3>
-		  <p id="FREENAS_date"></p>
-		  <div id="FREENAS_zpool"></div>
-	          <h3>C60M1 <a href="C60M1.html" id="C60M1_uptime"></a></h3>
-		  <p id="C60M1_date"></p>
-		  <div id="C60M1_zpool"></div>
-		  <h3>VPN1 <a href="VPN1.html" id="VPN1_uptime"></a></h3>
-		  <p id="VPN1_date"></p>
-		  <div id="VPN1_zpool"></div>
-
+	          <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://ionicons.com/">ionicons</a></li>
+            <li><a href="https://useiconic.com/open/">useiconinc</a></li>
+            <li><a href="http://fontawesome.io/">awsome</a></li>
+            <li><a href="https://google.github.io/material-design-icons/">Material</a></li>
+            <li><a href="https://useiconic.com/open">use iconic</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+		  
+		  <footer>
+        <p>&copy; JPConstantineau.com 2017</p>
+      </footer>
         </div>
-        <div class="col-lg-4">
-		   <h3>UPS Info</h3>
-           <div id="ups"></div>
-       </div>
-	   </div>
-	
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	    <h1 class="page-header">Dashboard</h1>
+		
+		
+		</div>
+	  </div>
+
       <hr>
 
-      <footer>
-        <p>&copy; jpconstantineau.com</p>
-		
-      </footer>
+      
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
 
-        <script src="/js/main.js"></script>
-		<script >
-		
-		
-		function loadlinks(){
-				
-				$("#FRACTAL_uptime").load("fractal/uptime.txt");
-				$("#FREENAS_uptime").load("freenas/uptime.txt");
-				$("#C60M1_uptime").load("c60m1/uptime.txt");
-				$("#VPN1_uptime").load("vpn1/uptime.txt");
-
-				$("#FRACTAL_zpool").load("fractal/zpool.html");
-				$("#FREENAS_zpool").load("freenas/zpool.html");
-				$("#C60M1_zpool").load("c60m1/zpool.html");
-				$("#VPN1_zpool").load("vpn1/zpool.html");
-
-				$("#FRACTAL_date").load("fractal/date.txt");
-				$("#FREENAS_date").load("freenas/date.txt");
-				$("#C60M1_date").load("c60m1/date.txt");
-				$("#VPN1_date").load("vpn1/date.txt");
-
-
-				$("#ups").load("FRACTAL/ups.html");
-						}
-
-		loadlinks(); // This will run on page load
-			setInterval(function(){
-			loadlinks() // this will run after every 5 seconds
-		}, 5000);
-		
-		
-		
-		
-		</script>
-		
-		
+        <script src="js/main.js"></script>
     </body>
 </html>

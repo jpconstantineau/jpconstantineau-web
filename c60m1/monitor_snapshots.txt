@@ -1,3 +1,0 @@
-MonitorPool/monitor@syncoid_FRACTAL_2018-01-28:13:36:01                     21K      -   270K  -
-MonitorPool/scripts@syncoid_vpn1.jpconstantineau.com_2017-08-24:22:31:17    17K      -    40K  -
-MonitorPool/scripts@syncoid_FRACTAL_2018-01-28:13:30:03                     13K      -   230K  -

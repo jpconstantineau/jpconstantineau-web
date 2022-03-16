@@ -1,7 +1,0 @@
-                           capacity     operations    bandwidth
-pool                    alloc   free   read  write   read  write
-----------------------  -----  -----  -----  -----  -----  -----
-StoragePool             1.37T   448G      0      1  1.63K  9.70K
-  diskid/DISK-WDZ2W4GD  1.37T   448G      0      1  1.63K  9.70K
-----------------------  -----  -----  -----  -----  -----  -----
-
